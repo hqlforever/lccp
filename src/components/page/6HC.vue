@@ -4,10 +4,10 @@
         <v-head></v-head>
         <div class="container bet">
 
-            <div class="betTitle fix">
+            <div class="betTitle fix headPK10">
                 <div class="betLogo">
-                    <h2>{{LotteryName}}</h2>
-                    <i class="iconfont L_PK10"></i>
+                    <h2>香港六合彩</h2>
+                    <i class="iconfont L_6HC"></i>
                 </div>
                 <div class="time">
                     <div class="timeTitle" style="opacity: 1;">距
@@ -15,155 +15,313 @@
                     <em>{{countTimeStr}}</em>
                 </div>
                 <div id="Results" class="announced">
-                <div  class="announcedTitle">第<b >{{currentID}}</b>期开奖号码：</div>
-                <ul  class="announcedNo fix" style="">
-                <li  class="announcedNo1"></li>
-                <li  class="announcedNo2"></li>
-                <li  class="announcedNo6">
-                </li>
-                </ul>
+                    <div class="announcedTitle">第
+                        <b>{{currentID}}</b>期开奖号码：</div>
+
+                    <ul class="roundNo fix">
+                        <li v-for="item of currentList">
+                            {{item}}
+                        </li>
+                    </ul>
+
+                    <ul class="announcedNo fix" style="display: none;">
+                        <img width="61" height="71" src="//imagess-google.com/system/pc/k3/open_num.gif"> <img width="61" height="71" src="//imagess-google.com/system/pc/k3/open_num.gif"> <img width="61" height="71" src="//imagess-google.com/system/pc/k3/open_num.gif"></ul>
+                    <ul class="announcedNo fix" style="display: none;">
+                        <li class="announcedNo06"></li>
+                        <li class="announcedNo04"></li>
+                        <li class="announcedNo07"></li>
+                        <li class="announcedNo02"></li>
+                        <li class="announcedNo09"></li>
+                        <li class="announcedNo05"></li>
+                        <li class="announcedNo03"></li>
+                        <li class="announcedNo10"></li>
+                        <li class="announcedNo08"></li>
+                        <li class="announcedNo01"></li>
+                    </ul>
+                    <ul class="announcedNo announcedNoText fix" style="display: none;">
+                        <li class="announcedNo06">06</li>
+                        <li class="announcedNo04">04</li>
+                        <li class="announcedNo07">07</li>
+                        <li class="announcedNo02">02</li>
+                        <li class="announcedNo09">09</li>
+                        <li class="announcedNo05">05</li>
+                        <li class="announcedNo03">03</li>
+                        <li class="announcedNo10">10</li>
+                        <li class="announcedNo08">08</li>
+                        <li class="announcedNo01">01</li>
+                    </ul>
                 </div>
             </div>
             <div class="betContent fix">
-                <div class="betLeft">
-                    <div>
-                        <div class="betNavCon">
-                            <ul class="betNav fix" style="width: 1232px; transform: translateX(0px);">
-                                <li :class="{active:1401 == code}" @click="tab(1401)">江苏快3</li>
-                                <li :class="{active:1402 == code}" @click="tab(1402)">安徽快3</li>
-                                <li :class="{active:1406 == code}" @click="tab(1406)">北京快3</li>
-                                <li :class="{active:1410 == code}" @click="tab(1410)">上海快3</li>
+                <div  class="betLeft">
+                    <div  >
+                        <div  class="betNavCon">
+                            <ul  class="betNav fix" style="width: 224px; transform: translateX(0px);">
+                                <li  class="active">香港六合彩</li>
                             </ul>
                         </div>
-                        <a class="betNavtab left">
-                            <span>
-                                <em></em>
+                        <a  class="betNavtab left">
+                            <span >
+                                <em ></em>
                             </span>
                         </a>
-                        <a class="betNavtab right">
-                            <span>
-                                <em></em>
+                        <a  class="betNavtab right">
+                            <span >
+                                <em ></em>
                             </span>
                         </a>
                     </div>
                     <!---->
-                    <!---->
-                    <div>
-                        <ul class="betFilter">
-                            <li class="curr">和值</li>
-                            <li class="">三同号通选</li>
-                            <li class="">三同号单选</li>
-                            <li class="">三不同号</li>
-                            <li class="">三连号通选</li>
-                            <li class="">二同号复选</li>
-                            <li class="">二同号单选</li>
-                            <li class="">二不同号</li>
-                        </ul>
-                        <div class="betTip">
-                            <i class="iconfont"></i>猜3个开奖号相加的和，3-10为小，11-18为大。赔率1.968-190.94倍。</div>
-                        <div class="checkNumber" style="height:344px;width:710px;">
-                            <ul style=" text-align:center">
-                                <li class="">
-                                    <a class="ClickShade">3</a>
-                                    <span> 赔190.94</span>
+                    <div  >
+                        <div  >
+                            <ul  class="betFilter">
+                                <li  class="curr">特码
+                                    <!---->
                                 </li>
-                                <li class="">
-                                    <a class="ClickShade">4</a>
-                                    <span> 赔63.64</span>
+                                <li  class="">正码
+                                    <!---->
                                 </li>
-                                <li class="">
-                                    <a class="ClickShade">5</a>
-                                    <span> 赔31.82</span>
+                                <li  class="">连码
+                                    <!---->
                                 </li>
-                                <li class="">
-                                    <a class="ClickShade">6</a>
-                                    <span> 赔19.09</span>
+                                <li  class="">半波
+                                    <!---->
                                 </li>
-                                <li class="">
-                                    <a class="ClickShade">7</a>
-                                    <span> 赔12.72</span>
+                                <li  class="">生肖
+                                    <!---->
                                 </li>
-                                <li class="">
-                                    <a class="ClickShade">8</a>
-                                    <span> 赔9.09</span>
+                                <li  class="">尾数
+                                    <!---->
                                 </li>
-                                <li class="">
-                                    <a class="ClickShade">9</a>
-                                    <span> 赔7.63</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">10</a>
-                                    <span> 赔7.07</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">11</a>
-                                    <span> 赔7.07</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">12</a>
-                                    <span> 赔7.63</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">13</a>
-                                    <span> 赔9.09</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">14</a>
-                                    <span> 赔12.72</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">15</a>
-                                    <span> 赔19.09</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">16</a>
-                                    <span> 赔31.82</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">17</a>
-                                    <span> 赔63.64</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">18</a>
-                                    <span> 赔190.94</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">大</a>
-                                    <span> 赔率1.968</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">小</a>
-                                    <span> 赔率1.968</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">单</a>
-                                    <span> 赔率1.968</span>
-                                </li>
-                                <li class="">
-                                    <a class="ClickShade">双</a>
-                                    <span> 赔率1.968</span>
+                                <li  class="">不中
+                                    <!---->
                                 </li>
                             </ul>
-                            <!---->
-                            <!---->
+                            <ul  class="betFilterAnd">
+                                <li >
+                                    <span >特码</span>
+                                    <div >
+                                        <a  class="curr">直选</a>
+                                        <a  class="">两面</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div  class="betTip">
+                                <i  class="iconfont"></i>从1-49中任选1个或多个号码，每个号码为一注，所选号码中包含特码，即为中奖。 赔率
+
+                                <ins >48.51</ins>
+                                <!---->
+                                <div  class="hoverContent">
+                                    <table >
+                                        <tr >
+                                            <th >猜中</th>
+                                            <th >单注最高奖金</th>
+                                        </tr>
+                                        <tr >
+                                            <td ></td>
+                                            <td >4元</td>
+                                        </tr>
+                                        <tr >
+                                            <td ></td>
+                                            <td >8元</td>
+                                        </tr>
+                                        <tr >
+                                            <td ></td>
+                                            <td >.元</td>
+                                        </tr>
+                                        <tr >
+                                            <td ></td>
+                                            <td >5元</td>
+                                        </tr>
+                                        <tr >
+                                            <td ></td>
+                                            <td >1元</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!---->
+                            </div>
                         </div>
-                        <div class="Panel" style="display: none;">
-                            <p class="betTotal">您选择了
-                                <em>0</em> 注</p>
-                            <a class="betBtn ClickShade">确认选号</a>
+                        <!---->
+                        <!---->
+                        <div  class="sscCheckNumber colorbox">
+                            <ul  class="fix">
+                                <li >
+                                    <div  class="fix selectMini">
+                                        <span  class="buyNumberTitle">号码
+                                            <i ></i>
+                                        </span>
+                                        <div  class="buyNumber fix">
+                                            <a  class="red">
+                                                <span >01</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >02</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >03</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >04</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >05</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >06</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >07</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >08</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >09</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >10</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >11</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >12</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >13</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >14</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >15</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >16</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >17</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >18</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >19</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >20</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >21</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >22</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >23</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >24</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >25</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >26</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >27</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >28</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >29</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >30</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >31</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >32</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >33</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >34</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >35</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >36</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >37</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >38</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >39</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >40</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >41</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >42</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >43</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >44</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >45</span>
+                                            </a>
+                                            <a  class="red">
+                                                <span >46</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >47</span>
+                                            </a>
+                                            <a  class="blue">
+                                                <span >48</span>
+                                            </a>
+                                            <a  class="green">
+                                                <span >49</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="checkedList">
-                            <table>
-                                <tbody></tbody>
+                        <div  class="Panel">
+                            <p  class="betTotal">您选择了
+                                <em >0</em> 注</p>
+                            <a  class="betBtn ClickShade">确认选号</a>
+                        </div>
+                        <div  class="checkedList">
+                            <table >
+                                <tbody ></tbody>
                             </table>
                         </div>
-                        <div class="Bet">
-                            <p class="betTotal">方案注数
-                                <em>0</em> 注，金额
-                                <i class="money">0</i> 元</p>
-                            <a class="betBtn ClickShade UnClick">立即投注</a>
+                        <div  class="Bet">
+                            <p  class="betTotal">方案注数
+                                <em >0</em> 注，金额
+                                <i  class="money">0</i> 元</p>
+                            <a  class="betBtn ClickShade UnClick">立即投注</a>
                         </div>
                     </div>
+                    <!---->
                 </div>
                 <div class="betRight">
                     <div class="today box">
@@ -190,7 +348,7 @@
                                         </td>
                                         <td>
 
-                                            <i class="numbers">{{item.LotteryOpen | formatNO}}
+                                            <i class="numbers">{{item.LotteryOpen }}
                                                 <a v-on:click="detail(item.LotteryOpen)">详情</a>
                                             </i>
                                         </td>
@@ -426,8 +584,9 @@
 <script>
 import vFoot from "../common/Footer.vue";
 import vHead from "../common/SubHeader.vue";
-import moment from "moment";
 import ctl from "../../Controller.js";
+import moment from "moment";
+
 export default {
   data() {
     return {
@@ -455,10 +614,11 @@ export default {
       currentID: "",
       currentList: [],
       nowPlan: {},
+      code: 1301,
+      LotteryName: "",
       countTimeStr: "00:00:00",
       Timer1: null,
-      Timer2: null,
-      LotteryName: ""
+      Timer2: null
     };
   },
   components: {
@@ -467,22 +627,6 @@ export default {
   },
   mounted() {
     let that = this;
-    that.code = this.$route.params.id;
-
-    switch (that.code) {
-      case "1401":
-        this.LotteryName = "江苏快3";
-        break;
-      case "1402":
-        this.LotteryName = "安徽快3";
-        break;
-      case "1406":
-        this.LotteryName = "北京快3";
-        break;
-      case "1410":
-        this.LotteryName = "上海快3";
-        break;
-    }
 
     let p1 = new Promise(function(resolve, reject) {
       ctl.GetServerTimeMillisecond().then(function(response) {
@@ -492,7 +636,7 @@ export default {
       });
     });
     let p2 = new Promise(function(resolve, reject) {
-      ctl.GetLotteryPlan({ code:that.code }).then(function(response) {
+      ctl.GetLotteryPlan({ code: that.code }).then(function(response) {
         if (response.data.Code == 0) {
           resolve(response.data.Data);
         }
@@ -517,12 +661,11 @@ export default {
     that.init();
   },
   methods: {
-     tab(code) {
+    tab(code) {
       clearInterval(this.Timer1);
       clearInterval(this.Timer2);
       //this.$router.push("/lottery/SSC" + code);
-      window.location.href = '/lottery/K3/'+code;
-    
+      window.location.href = "/lottery/SSC/" + code;
     },
     detail(id) {
       this.layer.open({
@@ -535,7 +678,109 @@ export default {
         btn: ["确定"]
       });
     },
-   
+    choose(event) {
+      var text = event.currentTarget.innerText;
+      var eID = event.target.parentNode.getAttribute("id");
+      var child = event.target.parentNode.children;
+      if (event.currentTarget.className == "") {
+        event.currentTarget.className = "curr";
+      } else {
+        event.currentTarget.className = "";
+      }
+      this.setValue(eID, child);
+    },
+    selected(event) {
+      var that = this;
+      var text = event.currentTarget.innerText;
+      var child = event.target.parentNode.previousElementSibling.children;
+      var eID = event.target.parentNode.previousElementSibling.getAttribute(
+        "id"
+      );
+
+      for (var i = 0; i < child.length; i++) {
+        child[i].className = "";
+      }
+
+      if (text == "全") {
+        for (var i = 0; i < child.length; i++) {
+          child[i].className = "curr";
+        }
+      }
+      if (text == "奇") {
+        for (var i = 0; i < child.length; i++) {
+          if ((i + 1) % 2 == 1) {
+            child[i].className = "curr";
+          }
+        }
+      }
+
+      if (text == "偶") {
+        for (var i = 0; i < child.length; i++) {
+          if ((i + 1) % 2 == 0) {
+            child[i].className = "curr";
+          }
+        }
+      }
+      if (text == "大") {
+        for (var i = 0; i < child.length; i++) {
+          if (i >= 5) {
+            child[i].className = "curr";
+          }
+        }
+      }
+      if (text == "小") {
+        for (var i = 0; i < child.length; i++) {
+          if (i < 5) {
+            child[i].className = "curr";
+          }
+        }
+      }
+      that.setValue(eID, child);
+    },
+    setValue(id, child) {
+      var that = this;
+      that.chooseOBJ[id].splice(0, that.chooseOBJ[id].length);
+
+      for (var i = 0; i < child.length; i++) {
+        if (child[i].className == "curr") {
+          that.chooseOBJ[id].push(child[i].innerText);
+        }
+      }
+
+      var num = 0;
+
+      for (var i in that.chooseOBJ) {
+        num = num + that.chooseOBJ[i].length;
+      }
+
+      that.Quantity = num;
+      that.Amount = parseFloat(num * 2, 2);
+      //console.info(this.chooseOBJ[id].length);
+    },
+    addAndsub(flag) {
+      let that = this;
+      if (flag) {
+        if (that.Much > 10000) {
+          return false;
+        }
+        that.Much = that.Much + 1;
+        that.Amount = that.Much * that.UnitPrice * this.Quantity;
+      } else {
+        if (that.Much <= 1) {
+          that.Much = 1;
+        } else {
+          that.Much = that.Much - 1;
+        }
+
+        that.Amount = that.Much * that.UnitPrice * this.Quantity;
+      }
+    },
+    muchChange() {
+      var that = this;
+      if (that.Much >= 1 && that.Much <= 10000) {
+        that.Amount = that.Much * that.UnitPrice * this.Quantity;
+      }
+    },
     isDateBetween(beginTime, endTime, nowTime) {
       var strb = beginTime.split(":");
       if (strb.length != 3) {
@@ -603,8 +848,8 @@ export default {
     },
     StartTime() {
       let that = this;
-
       that.nowPlan = this.findNowPlan();
+
       that.Timer1 = setInterval(function() {
         var m = that.ServerTime;
         that.ServerTime = new Date(m.getTime() + 1000);
@@ -649,7 +894,7 @@ export default {
       let leftTime = end - now;
       let num = Math.abs(leftTime) / 1000 / 60;
 
-      if (num < 5) {
+      if (num < 10) {
         that.currentID = parseInt(that.OpenList[0].IssueNo);
       } else {
         that.currentID = parseInt(that.OpenList[0].IssueNo) + 1;
@@ -677,4 +922,21 @@ export default {
 </script>
 
 <style>
+.betFilter li {
+  width: 38px;
+  height: 28px;
+}
+ul li {
+  /* display: inline-block;
+  width: 42px;
+  height: 48px;
+  margin: 0 5px;
+  position: relative;
+  background: url(http://imagess-google.com/system/pc/ssc/ballOpenBg.png)
+    no-repeat;
+  font-size: 22px;
+  line-height: 42px;
+  color: #a12836;
+  text-shadow: 1px 1px 1px #f5f5f5; */
+}
 </style>

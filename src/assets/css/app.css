@@ -5509,7 +5509,8 @@ body {
 }
 
 .loginRegister{
-	height: 44px
+	height: 44px;
+	width: 260px;
 }
 
 .loginRegister a{
@@ -14579,12 +14580,12 @@ input[type=radio]:checked+label[data-v-c57d5184]:before {
 	margin: 8px 14px
 }
 
-.checkNumber ul li {
+/* .checkNumber ul li {
 	float: left;
 	display: inline-block;
 	margin: 12px 15px;
 	vertical-align: top
-}
+} */
 
 .checkNumber ul li a {
 	box-shadow: 0 1px 5px #d4d4d4;

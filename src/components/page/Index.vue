@@ -27,16 +27,51 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/lottery/SSC/1008" class="MustLogin">
-                                <i class="iconfont L_SSC"></i>
-                                <span class="sortName">大发时时彩</span>
-                                <span class="des">1分钟1期</span>
+                            <a href="/lottery/6HC" class="MustLogin">
+                                <i class="iconfont L_6HC"></i>
+                                <span class="sortName">香港六合彩</span>
+                                <span class="des">一周三期</span>
                             </a>
                         </li>
                         <li>
                             <a href="/lottery/SSC/1003" class="MustLogin">
                                 <i class="iconfont L_SSC"></i>
                                 <span class="sortName">天津时时彩</span>
+                                <span class="des">全天84期</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/lottery/K3/1401" class="MustLogin">
+                                <i class="iconfont L_K3"></i>
+                                <span class="sortName">江苏快3</span>
+                                <span class="des">全天82期</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/lottery/K3/1402" class="MustLogin">
+                                <i class="iconfont L_K3"></i>
+                                <span class="sortName">安徽快3</span>
+                                <span class="des">全天80期</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/lottery/SYX5/1100" class="MustLogin">
+                                <i class="iconfont L_SYX5"></i>
+                                <span class="sortName">广东11选5</span>
+                                <span class="des">全天84期</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/lottery/SYX5/1101" class="MustLogin">
+                                <i class="iconfont L_SYX5"></i>
+                                <span class="sortName">上海11选5</span>
+                                <span class="des">全天84期</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/lottery/SYX5/1103" class="MustLogin">
+                                <i class="iconfont L_SYX5"></i>
+                                <span class="sortName">江西11选5</span>
                                 <span class="des">全天84期</span>
                             </a>
                         </li>
@@ -201,17 +236,17 @@
                 </div>
             </div>
             <div class="wrapR">
-                <!-- <div class="loginRegister">
-                    <a href="/#/login" class="">
+                <div class="loginRegister" v-show="!isLogin">
+                    <a href="/login" class="">
                         <i class="iconfont"></i>登 录</a>
-                    <a href="/#/register" class="">用户注册</a>
-                </div> -->
-                <div class="logined">
+                    <a href="/register" class="">用户注册</a>
+                </div>
+                <div class="logined" v-show="isLogin">
                     <h3>
                         <i class="iconfont"></i>
-                        <b>13001129736</b>
+                        <b>{{userName}}</b>
                     </h3>
-                    <a class="LoginOut">
+                    <a class="LoginOut" @click="logOut()">
                         <em>退出</em>
                         <i class="iconfont"></i>
                     </a>
@@ -272,168 +307,15 @@
                     <h6>中奖信息</h6>
                     <div class="winnerListSlide" style="box-sizing: content-box;">
                         <div class="bd">
-                            <ul class="winnerList" style="cursor: pointer; position: relative; top: -713px; transition: all 0.3s linear;">
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/3578E1EB410B49C7.jpg">
-                                    <p>hx***4 北京快乐8
-                                        <br>喜中
-                                        <span>¥9.78</span>
+                            <ul class="winnerList" v-bind:style="{cursor: 'pointer', position: 'relative',top:num+'px'}">
+
+                                <li v-for="item of BonusList">
+                                    <img :src="'//imagess-google.com/system/common/headimg/'+item.UserPhoto" />
+                                    <p>{{item.UserName}} {{item.LotteryName}}<br>喜中
+                                        <span>¥{{parseFloat(item.Bonus*1000).toFixed(2)}}</span>
                                     </p>
                                 </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/67b487fa0ac81fa2.jpg">
-                                    <p>yh***4 重庆时时彩
-                                        <br>喜中
-                                        <span>¥9.8</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/82c23ac3f9aacda5.jpg">
-                                    <p>ss***0 重庆时时彩
-                                        <br>喜中
-                                        <span>¥98</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/84b378fb373e860b.jpg">
-                                    <p>18***2 大发快3
-                                        <br>喜中
-                                        <span>¥1.95</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/af43698834aecd89.jpg">
-                                    <p>13***2 大发快3
-                                        <br>喜中
-                                        <span>¥9.75</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/C707188A6E10AED4.jpg">
-                                    <p>爱上你 UU快三
-                                        <br>喜中
-                                        <span>¥39</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/efe347f5ff37e8f1.jpg">
-                                    <p>77***3 北京快乐8
-                                        <br>喜中
-                                        <span>¥0.08</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/274692371a941235.jpg">
-                                    <p>18***4 重庆时时彩
-                                        <br>喜中
-                                        <span>¥78.4</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/9A9C9E1A719CE536.jpg">
-                                    <p>ly***8 大发PK10
-                                        <br>喜中
-                                        <span>¥5.85</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/5C5A53823438F2CD.jpg">
-                                    <p>13***1 大发PK10
-                                        <br>喜中
-                                        <span>¥98</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/a5e3e2b62d17a646.jpg">
-                                    <p>11***6 大发快3
-                                        <br>喜中
-                                        <span>¥1.96</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/274692371a941235.jpg">
-                                    <p>10***4 北京快3
-                                        <br>喜中
-                                        <span>¥5.85</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/EF01C8BED7B70053.jpg">
-                                    <p>灵茗 大发PK10
-                                        <br>喜中
-                                        <span>¥15.6</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/2ccae7bb8c67d793.jpg">
-                                    <p>一生平安 北京快3
-                                        <br>喜中
-                                        <span>¥3.94</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/1141db5335b25b6d.jpg">
-                                    <p>av***x 北京快3
-                                        <br>喜中
-                                        <span>¥1.95</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/ce1267c17f9e8850.jpg">
-                                    <p>雪碧 大发六合彩
-                                        <br>喜中
-                                        <span>¥48.02</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/81e8ebc3eedde4e1.jpg">
-                                    <p>jh***5 大发快3
-                                        <br>喜中
-                                        <span>¥39.36</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/7debbc56b4b1e837.jpg">
-                                    <p>66***n 北京快3
-                                        <br>喜中
-                                        <span>¥39</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/2ccae7bb8c67d793.jpg">
-                                    <p>美好时光 大发六合彩
-                                        <br>喜中
-                                        <span>¥5.94</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/af43698834aecd89.jpg">
-                                    <p>yz***8 江西11选5
-                                        <br>喜中
-                                        <span>¥8.58</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/3578E1EB410B49C7.jpg">
-                                    <p>hx***4 北京快乐8
-                                        <br>喜中
-                                        <span>¥9.78</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/67b487fa0ac81fa2.jpg">
-                                    <p>yh***4 重庆时时彩
-                                        <br>喜中
-                                        <span>¥9.8</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="http://imagess-google.com/system/common/headimg/82c23ac3f9aacda5.jpg">
-                                    <p>ss***0 重庆时时彩
-                                        <br>喜中
-                                        <span>¥98</span>
-                                    </p>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -447,6 +329,8 @@
 </template>
 
 <script>
+import http from "../../http.js";
+import ctl from "../../Controller.js";
 export default {
   data() {
     return {
@@ -455,18 +339,53 @@ export default {
           url: "./assets/images/banner1.png"
         },
         {
-           url: "./assets/images/banner2.png"
+          url: "./assets/images/banner2.png"
         },
         {
-           url: "./assets/images/banner3.png"
+          url: "./assets/images/banner3.png"
         },
         {
           url: "./assets/images/banner4.png"
         }
-      ]
+      ],
+      BonusList: [],
+      num: 15,
+      isLogin: false,
+      userName: ""
     };
   },
+  created() {
+    let that = this;
+
+    //检查localstorage 判断用户是否登录
+    let userInfo = localStorage.getItem("userInfo");
+
+    if (userInfo != null) {
+      that.isLogin = true;
+      that.userName = userInfo;
+    } else {
+      that.isLogin = false;
+    }
+    this.$emit('changeLogin',"true");
+
+ ctl.GetNewestBonusList({ code: 1303 }).then(function(response) {
+        if (response.data.Code == 1) {
+          that.BonusList = response.data.BackData.NewestBonusList;
+        }
+      });
+
+    setInterval(function() {
+      that.num = that.num - 52;
+    }, 3000);
+  },
   mounted() {},
+  methods: {
+    logOut() {
+      localStorage.clear();
+      this.$router.push("login");
+      this.$emit('changeLogin',"true");
+    }
+  },
   components: {}
 };
 </script>

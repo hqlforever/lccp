@@ -6,8 +6,8 @@
 
             <div class="betTitle fix headPK10">
                 <div class="betLogo">
-                    <h2>北京PK10</h2>
-                    <i class="iconfont L_PK10"></i>
+                    <h2>福彩3D</h2>
+                    <i class="iconfont L_FC3D"></i>
                 </div>
                 <div class="time">
                     <div class="timeTitle" style="opacity: 1;">距
@@ -54,62 +54,57 @@
             </div>
             <div class="betContent fix">
                 <div class="betLeft">
-                    <div>
-                        <div class="betNavCon">
-                            <ul class="betNav fix" style="width: 224px; transform: translateX(0px);">
-                                <li class="active">北京PK10</li>
-                                <!-- <li >大发PK10</li> -->
-                            </ul>
-                        </div>
-                        <a class="betNavtab left">
-                            <span>
-                                <em></em>
-                            </span>
-                        </a>
-                        <a class="betNavtab right">
-                            <span>
-                                <em></em>
-                            </span>
-                        </a>
-                    </div>
+             
                     <div>
                         <div>
                             <ul class="betFilter">
-                                <li class="curr">定位胆
+                                <li class="curr">一星
                                     <!---->
                                 </li>
-                                <li>猜前五
+                                <li class="">前二
                                     <!---->
                                 </li>
-                                <li>猜前四
+                                <li class="">后二
                                     <!---->
                                 </li>
-                                <li>猜前三
+                                <li class="">前三
                                     <!---->
                                 </li>
-                                <li>猜前二
+                                <li class="">中三
                                     <!---->
                                 </li>
-                                <li>猜冠军
+                                <li class="">后三
                                     <!---->
                                 </li>
-                                <li>冠亚军
+                                <li class="">四星
+                                    <!---->
+                                </li>
+                                <li class="">五星
+                                    <!---->
+                                </li>
+                                <li class="">大小单双
+                                    <!---->
+                                </li>
+                                <li class="">两面
                                     <em class="newPlayType">NEW</em>
                                 </li>
-                                <li>双面盘
+                                <li class="">龙虎斗
+                                    <em class="newPlayType">NEW</em>
+                                </li>
+                                <li class="">猜豹子
                                     <em class="newPlayType">NEW</em>
                                 </li>
                             </ul>
                             <ul class="betFilterAnd">
                                 <li>
-                                    <span>标准</span>
+                                    <span>定位胆</span>
                                     <div>
-                                        <a class="curr">定位胆</a>
+                                        <a class="curr">复式</a>
                                     </div>
                                 </li>
                             </ul>
                             <div class="betTip">
-                                <i class="iconfont"></i>从冠、亚、季、四、五、六、七、八、九、十任意位置上任意选择一个或一个以上号码，奖金
+                                <i class="iconfont"></i>从万位、千位、百位、十位、个位任意位置上至少选择1个号码，选号与相同位置上的开奖号码一致，奖金
 
                                 <ins>19.60</ins>元
                                 <!---->
@@ -144,8 +139,8 @@
                                 <div class="selectEg">选号示例</div>
                                 <div class="EgContent">
                                     <ul>
-                                        <li>投注：冠选择01</li>
-                                        <li>开奖：01 *</li>
+                                        <li>投注：1****</li>
+                                        <li>开奖：1****</li>
                                         <li>奖金：
                                             <ins>19.60</ins>
                                         </li>
@@ -160,39 +155,39 @@
                                     <ul>
                                         <li>
                                             <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">冠军
+                                                <span class="buyNumberTitle">万位
                                                     <i></i>
                                                 </span>
-                                                <div class="buyNumber fix" id="one">
-                                                    <a v-on:click="choose">
-                                                        01
+                                                <div class="buyNumber fix">
+                                                    <a class="">
+                                                        0
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        02
+                                                    <a class="">
+                                                        1
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        03
+                                                    <a class="">
+                                                        2
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        04
+                                                    <a class="">
+                                                        3
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        05
+                                                    <a class="">
+                                                        4
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        06
+                                                    <a class="">
+                                                        5
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        07
+                                                    <a class="">
+                                                        6
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        08
+                                                    <a class="">
+                                                        7
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        09
+                                                    <a class="">
+                                                        8
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        10
+                                                    <a class="">
+                                                        9
                                                     </a>
                                                 </div>
                                                 <!---->
@@ -206,39 +201,39 @@
                                                 </div>
                                             </div>
                                             <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">亚军
+                                                <span class="buyNumberTitle">千位
                                                     <i></i>
                                                 </span>
-                                                <div class="buyNumber fix" id="two">
-                                                    <a v-on:click="choose">
-                                                        01
+                                                <div class="buyNumber fix">
+                                                    <a class="">
+                                                        0
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        02
+                                                    <a class="">
+                                                        1
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        03
+                                                    <a class="">
+                                                        2
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        04
+                                                    <a class="">
+                                                        3
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        05
+                                                    <a class="">
+                                                        4
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        06
+                                                    <a class="">
+                                                        5
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        07
+                                                    <a class="">
+                                                        6
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        08
+                                                    <a class="">
+                                                        7
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        09
+                                                    <a class="">
+                                                        8
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        10
+                                                    <a class="">
+                                                        9
                                                     </a>
                                                 </div>
                                                 <!---->
@@ -252,39 +247,39 @@
                                                 </div>
                                             </div>
                                             <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">季军
+                                                <span class="buyNumberTitle">百位
                                                     <i></i>
                                                 </span>
-                                                <div class="buyNumber fix" id="three">
-                                                    <a v-on:click="choose">
-                                                        01
+                                                <div class="buyNumber fix">
+                                                    <a class="">
+                                                        0
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        02
+                                                    <a class="">
+                                                        1
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        03
+                                                    <a class="">
+                                                        2
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        04
+                                                    <a class="">
+                                                        3
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        05
+                                                    <a class="">
+                                                        4
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        06
+                                                    <a class="">
+                                                        5
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        07
+                                                    <a class="">
+                                                        6
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        08
+                                                    <a class="">
+                                                        7
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        09
+                                                    <a class="">
+                                                        8
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        10
+                                                    <a class="">
+                                                        9
                                                     </a>
                                                 </div>
                                                 <!---->
@@ -298,39 +293,39 @@
                                                 </div>
                                             </div>
                                             <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">第四
+                                                <span class="buyNumberTitle">十位
                                                     <i></i>
                                                 </span>
-                                                <div class="buyNumber fix" id="four">
-                                                    <a v-on:click="choose">
-                                                        01
+                                                <div class="buyNumber fix">
+                                                    <a class="">
+                                                        0
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        02
+                                                    <a class="">
+                                                        1
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        03
+                                                    <a class="">
+                                                        2
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        04
+                                                    <a class="">
+                                                        3
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        05
+                                                    <a class="">
+                                                        4
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        06
+                                                    <a class="">
+                                                        5
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        07
+                                                    <a class="">
+                                                        6
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        08
+                                                    <a class="">
+                                                        7
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        09
+                                                    <a class="">
+                                                        8
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        10
+                                                    <a class="">
+                                                        9
                                                     </a>
                                                 </div>
                                                 <!---->
@@ -344,269 +339,39 @@
                                                 </div>
                                             </div>
                                             <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">第五
+                                                <span class="buyNumberTitle">个位
                                                     <i></i>
                                                 </span>
-                                                <div class="buyNumber fix" id="five">
-                                                    <a v-on:click="choose">
-                                                        01
+                                                <div class="buyNumber fix">
+                                                    <a class="">
+                                                        0
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        02
+                                                    <a class="">
+                                                        1
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        03
+                                                    <a class="">
+                                                        2
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        04
+                                                    <a class="">
+                                                        3
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        05
+                                                    <a class="">
+                                                        4
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        06
+                                                    <a class="">
+                                                        5
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        07
+                                                    <a class="">
+                                                        6
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        08
+                                                    <a class="">
+                                                        7
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        09
+                                                    <a class="">
+                                                        8
                                                     </a>
-                                                    <a v-on:click="choose">
-                                                        10
-                                                    </a>
-                                                </div>
-                                                <!---->
-                                                <div class="buyNumberFilter">
-                                                    <a v-on:click="selected">全</a>
-                                                    <a v-on:click="selected">大</a>
-                                                    <a v-on:click="selected">小</a>
-                                                    <a v-on:click="selected">奇</a>
-                                                    <a v-on:click="selected">偶</a>
-                                                    <a v-on:click="selected">清</a>
-                                                </div>
-                                            </div>
-                                            <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">第六
-                                                    <i></i>
-                                                </span>
-                                                <div class="buyNumber fix" id="siex">
-                                                    <a v-on:click="choose">
-                                                        01
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        02
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        03
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        04
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        05
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        06
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        07
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        08
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        09
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        10
-                                                    </a>
-                                                </div>
-                                                <!---->
-                                                <div class="buyNumberFilter">
-                                                    <a v-on:click="selected">全</a>
-                                                    <a v-on:click="selected">大</a>
-                                                    <a v-on:click="selected">小</a>
-                                                    <a v-on:click="selected">奇</a>
-                                                    <a v-on:click="selected">偶</a>
-                                                    <a v-on:click="selected">清</a>
-                                                </div>
-                                            </div>
-                                            <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">第七
-                                                    <i></i>
-                                                </span>
-                                                <div class="buyNumber fix" id="senven">
-                                                    <a v-on:click="choose">
-                                                        01
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        02
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        03
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        04
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        05
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        06
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        07
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        08
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        09
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        10
-                                                    </a>
-                                                </div>
-                                                <!---->
-                                                <div class="buyNumberFilter">
-                                                    <a v-on:click="selected">全</a>
-                                                    <a v-on:click="selected">大</a>
-                                                    <a v-on:click="selected">小</a>
-                                                    <a v-on:click="selected">奇</a>
-                                                    <a v-on:click="selected">偶</a>
-                                                    <a v-on:click="selected">清</a>
-                                                </div>
-                                            </div>
-                                            <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">第八
-                                                    <i></i>
-                                                </span>
-                                                <div class="buyNumber fix" id="eight">
-                                                    <a v-on:click="choose">
-                                                        01
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        02
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        03
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        04
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        05
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        06
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        07
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        08
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        09
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        10
-                                                    </a>
-                                                </div>
-                                                <!---->
-                                                <div class="buyNumberFilter">
-                                                    <a v-on:click="selected">全</a>
-                                                    <a v-on:click="selected">大</a>
-                                                    <a v-on:click="selected">小</a>
-                                                    <a v-on:click="selected">奇</a>
-                                                    <a v-on:click="selected">偶</a>
-                                                    <a v-on:click="selected">清</a>
-                                                </div>
-                                            </div>
-                                            <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">第九
-                                                    <i></i>
-                                                </span>
-                                                <div class="buyNumber fix" id="nine">
-                                                    <a v-on:click="choose">
-                                                        01
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        02
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        03
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        04
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        05
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        06
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        07
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        08
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        09
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        10
-                                                    </a>
-                                                </div>
-                                                <!---->
-                                                <div class="buyNumberFilter">
-                                                    <a v-on:click="selected">全</a>
-                                                    <a v-on:click="selected">大</a>
-                                                    <a v-on:click="selected">小</a>
-                                                    <a v-on:click="selected">奇</a>
-                                                    <a v-on:click="selected">偶</a>
-                                                    <a v-on:click="selected">清</a>
-                                                </div>
-                                            </div>
-                                            <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">第十
-                                                    <i></i>
-                                                </span>
-                                                <div class="buyNumber fix" id="ten">
-                                                    <a v-on:click="choose">
-                                                        01
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        02
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        03
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        04
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        05
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        06
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        07
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        08
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        09
-                                                    </a>
-                                                    <a v-on:click="choose">
-                                                        10
+                                                    <a class="">
+                                                        9
                                                     </a>
                                                 </div>
                                                 <!---->
@@ -641,63 +406,14 @@
                                     共
                                     <i>{{Amount}}</i>元
                                 </p>
-                                <a class="betBtn" @click="betBtn">确认选号</a>
+                                <a class="betBtn">确认选号</a>
                             </div>
                         </div>
                         <div class="checkedListCon">
                             <div class="checkedList">
                                 <table>
-                                    <tbody>
-
-                                        <tr v-for="(item,index) in chooseArr">
-                                            <td>
-                                                <i class="order_type">
-                                                    [定位胆,标准,定位胆] {{item.join()}}
-                                                    <span>...</span>
-                                                </i>
-                                                <a class="orderDetail" @click="orderDetail(index)">详细</a>
-                                            </td>
-                                            <td>10注</td>
-                                            <td>1倍</td>
-                                            <td>元</td>
-                                            <td>
-                                                可中金额
-                                                <i class="orderMoney">19.60
-                                                    <i>元</i>
-                                                </i>
-                                            </td>
-                                            <td></td>
-                                            <td>
-                                                <i class="orderCancel" @click="delChooseArr(index)">删除</i>
-                                            </td>
-                                        </tr>
-
-                                        <!-- <tr>
-                                            <td>
-                                                <i class="order_type">
-                                                    [定位胆,标准,定位胆] 01 02 03 04 0
-                                                    <span>...</span>
-                                                </i>
-                                                <a class="orderDetail">详细</a>
-                                            </td>
-                                            <td>10注</td>
-                                            <td>1倍</td>
-                                            <td>元</td>
-                                            <td>
-                                                可中金额
-                                                <i class="orderMoney">19.60
-                                                    <i>元</i>
-                                                </i>
-                                            </td>
-                                            <td></td>
-                                            <td>
-                                                <i class="orderCancel">删除</i>
-                                            </td>
-                                        </tr> -->
-
-                                    </tbody>
+                                    <tbody></tbody>
                                 </table>
-
                             </div>
                             <p class="betTotal">
                                 方案注数
@@ -1028,7 +744,7 @@
                                         </td>
                                         <td>
 
-                                            <i class="numbers">{{item.LotteryOpen | formatNO}}
+                                            <i class="numbers">{{item.LotteryOpen }}
                                                 <a v-on:click="detail(item.LotteryOpen)">详情</a>
                                             </i>
                                         </td>
@@ -1256,16 +972,7 @@
                 </div>
             </div>
         </div>
-
-        <el-dialog title="温馨提示" :visible.sync="dialogVisible" width="30%" >
-            <span>[定位胆,标准,定位胆]{{dialogItem}} </span>
-            <span slot="footer" class="dialog-footer">
-
-                <el-button type="primary" @click="dialogVisible=false">确 定</el-button>
-            </span>
-        </el-dialog>
         <v-foot></v-foot>
-
     </div>
 
 </template>
@@ -1273,12 +980,12 @@
 <script>
 import vFoot from "../common/Footer.vue";
 import vHead from "../common/SubHeader.vue";
-import moment from "moment";
 import ctl from "../../Controller.js";
+import moment from "moment";
+
 export default {
   data() {
     return {
-      dialogVisible: false,
       chooseOBJ: {
         one: [],
         two: [],
@@ -1291,23 +998,23 @@ export default {
         nine: [],
         ten: []
       },
-      chooseArr: [],
       Quantity: 0,
       Amount: 0,
       Much: 1,
       UnitPrice: 2.0,
       OpenList: [],
       BonusList: [],
-      ServerTime: Date,//服务器时间
-      LotteryPlan: [],//开奖计划
+      ServerTime: Date,
+      LotteryPlan: [],
       currentID0: "",
       currentID: "",
-      currentList: [],//最新一期开奖号
+      currentList: [],
       nowPlan: {},
+      code: 1201,
+      LotteryName: "",
       countTimeStr: "00:00:00",
       Timer1: null,
-      Timer2: null,
-      dialogItem:"",
+      Timer2: null
     };
   },
   components: {
@@ -1317,6 +1024,7 @@ export default {
   mounted() {
     let that = this;
 
+
     let p1 = new Promise(function(resolve, reject) {
       ctl.GetServerTimeMillisecond().then(function(response) {
         if (response.data.Code == 1) {
@@ -1325,14 +1033,14 @@ export default {
       });
     });
     let p2 = new Promise(function(resolve, reject) {
-      ctl.GetLotteryPlan({ code: 1303 }).then(function(response) {
+      ctl.GetLotteryPlan({ code: that.code }).then(function(response) {
         if (response.data.Code == 0) {
           resolve(response.data.Data);
         }
       });
     });
     let p3 = new Promise(function(resolve, reject) {
-      ctl.GetLotteryOpen({ code: 1303 }).then(function(response) {
+      ctl.GetLotteryOpen({ code: that.code }).then(function(response) {
         if (response.data.Code == 1) {
           resolve(response.data.BackData);
         }
@@ -1350,11 +1058,15 @@ export default {
     that.init();
   },
   methods: {
-    fn() {
-      console.dir(this);
+    tab(code) {
+      clearInterval(this.Timer1);
+      clearInterval(this.Timer2);
+      //this.$router.push("/lottery/SSC" + code);
+      window.location.href = '/lottery/SSC/'+code;
+    
     },
     detail(id) {
-      this.$layer.open({
+      this.layer.open({
         area: "auto",
         offset: "auto",
         type: 0,
@@ -1534,8 +1246,8 @@ export default {
     },
     StartTime() {
       let that = this;
-
       that.nowPlan = this.findNowPlan();
+
       that.Timer1 = setInterval(function() {
         var m = that.ServerTime;
         that.ServerTime = new Date(m.getTime() + 1000);
@@ -1580,7 +1292,7 @@ export default {
       let leftTime = end - now;
       let num = Math.abs(leftTime) / 1000 / 60;
 
-      if (num < 5) {
+      if (num < 10) {
         that.currentID = parseInt(that.OpenList[0].IssueNo);
       } else {
         that.currentID = parseInt(that.OpenList[0].IssueNo) + 1;
@@ -1589,22 +1301,6 @@ export default {
       //       that.currentID = parseInt(that.OpenList[0].IssueNo) + 1;
       //     that.currentID0 = parseInt(that.OpenList[0].IssueNo) + 2;
       //   }
-    },
-    //确认选号
-    betBtn() {
-      let arr = [];
-      for (let e in this.chooseOBJ) {
-        arr.push(this.chooseOBJ[e]);
-      }
-      this.chooseArr.push(arr);
-    },
-    delChooseArr(index) {
-      alert(index);
-    },
-    orderDetail(index) {
-    this.dialogItem= this.chooseArr[index].join(" ");
-        this.dialogVisible = true;
-      
     }
   },
   filters: {
@@ -1624,4 +1320,21 @@ export default {
 </script>
 
 <style>
+.betFilter li {
+  width: 38px;
+  height: 28px;
+}
+ul li {
+  /* display: inline-block;
+  width: 42px;
+  height: 48px;
+  margin: 0 5px;
+  position: relative;
+  background: url(http://imagess-google.com/system/pc/ssc/ballOpenBg.png)
+    no-repeat;
+  font-size: 22px;
+  line-height: 42px;
+  color: #a12836;
+  text-shadow: 1px 1px 1px #f5f5f5; */
+}
 </style>

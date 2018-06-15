@@ -4,10 +4,10 @@
         <v-head></v-head>
         <div class="container bet">
 
-            <div class="betTitle fix headPK10">
+            <div class="betTitle fix">
                 <div class="betLogo">
                     <h2>{{LotteryName}}</h2>
-                    <i class="iconfont L_SSC"></i>
+                    <i class="iconfont L_SYX5"></i>
                 </div>
                 <div class="time">
                     <div class="timeTitle" style="opacity: 1;">距
@@ -27,28 +27,10 @@
                     <ul class="announcedNo fix" style="display: none;">
                         <img width="61" height="71" src="//imagess-google.com/system/pc/k3/open_num.gif"> <img width="61" height="71" src="//imagess-google.com/system/pc/k3/open_num.gif"> <img width="61" height="71" src="//imagess-google.com/system/pc/k3/open_num.gif"></ul>
                     <ul class="announcedNo fix" style="display: none;">
-                        <li class="announcedNo06"></li>
-                        <li class="announcedNo04"></li>
-                        <li class="announcedNo07"></li>
-                        <li class="announcedNo02"></li>
-                        <li class="announcedNo09"></li>
-                        <li class="announcedNo05"></li>
-                        <li class="announcedNo03"></li>
-                        <li class="announcedNo10"></li>
-                        <li class="announcedNo08"></li>
-                        <li class="announcedNo01"></li>
+
                     </ul>
                     <ul class="announcedNo announcedNoText fix" style="display: none;">
-                        <li class="announcedNo06">06</li>
-                        <li class="announcedNo04">04</li>
-                        <li class="announcedNo07">07</li>
-                        <li class="announcedNo02">02</li>
-                        <li class="announcedNo09">09</li>
-                        <li class="announcedNo05">05</li>
-                        <li class="announcedNo03">03</li>
-                        <li class="announcedNo10">10</li>
-                        <li class="announcedNo08">08</li>
-                        <li class="announcedNo01">01</li>
+
                     </ul>
                 </div>
             </div>
@@ -57,10 +39,12 @@
                     <div>
                         <div class="betNavCon">
                             <ul class="betNav fix" style="width: 448px; transform: translateX(0px);">
-                                <li :class="{active:1000 == code}" @click="tab(1000)">重庆时时彩</li>
-                                <li :class="{active:1001 == code}" @click="tab(1001)">新疆时时彩</li>
-                                <li :class="{active:1003 == code}" @click="tab(1003)">天津时时彩</li>
-                                <!-- <li >大发PK10</li> -->
+
+                                <li :class="{active:1100 == code}" @click="tab(1100)">广东11选5</li>
+                                <li :class="{active:1101 == code}" @click="tab(1101)">上海11选5</li>
+                                <li :class="{active:1102 == code}" @click="tab(1102)">山东11选5</li>
+                                <li :class="{active:1103 == code}" @click="tab(1103)">江西11选5</li>
+
                             </ul>
                         </div>
                         <a class="betNavtab left">
@@ -77,55 +61,47 @@
                     <div>
                         <div>
                             <ul class="betFilter">
-                                <li class="curr">一星
+                                <li class="curr">三码
                                     <!---->
                                 </li>
-                                <li class="">前二
+                                <li class="">二码
                                     <!---->
                                 </li>
-                                <li class="">后二
+                                <li class="">不定位
                                     <!---->
                                 </li>
-                                <li class="">前三
+                                <li class="">定位胆
                                     <!---->
                                 </li>
-                                <li class="">中三
+                                <li class="">趣味型
                                     <!---->
                                 </li>
-                                <li class="">后三
+                                <li class="">任选复式
                                     <!---->
                                 </li>
-                                <li class="">四星
+                                <li class="">任选单式
                                     <!---->
                                 </li>
-                                <li class="">五星
+                                <li class="">任选胆拖
                                     <!---->
-                                </li>
-                                <li class="">大小单双
-                                    <!---->
-                                </li>
-                                <li class="">两面
-                                    <em class="newPlayType">NEW</em>
-                                </li>
-                                <li class="">龙虎斗
-                                    <em class="newPlayType">NEW</em>
-                                </li>
-                                <li class="">猜豹子
-                                    <em class="newPlayType">NEW</em>
                                 </li>
                             </ul>
                             <ul class="betFilterAnd">
                                 <li>
-                                    <span>定位胆</span>
+                                    <span>三码</span>
                                     <div>
-                                        <a class="curr">复式</a>
+                                        <a class="curr">前三直选复式</a>
+                                        <a class="">前三直选单式</a>
+                                        <a class="">前三组选复式</a>
+                                        <a class="">前三组选单式</a>
+                                        <a class="">前三组选胆拖</a>
                                     </div>
                                 </li>
                             </ul>
                             <div class="betTip">
-                                <i class="iconfont"></i>从万位、千位、百位、十位、个位任意位置上至少选择1个号码，选号与相同位置上的开奖号码一致，奖金
+                                <i class="iconfont"></i>从01-11共11个号码中选择3个不重复的号码组成一注，所选号码与当期顺序摇出的5个号码中 的前3个号码相同，且顺序一致，即为中奖，奖金
 
-                                <ins>19.60</ins>元
+                                <ins>1928.52</ins>元
                                 <!---->
                                 <div class="hoverContent">
                                     <table>
@@ -143,25 +119,33 @@
                                         </tr>
                                         <tr>
                                             <td></td>
+                                            <td>2元</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>8元</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
                                             <td>.元</td>
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>6元</td>
+                                            <td>5元</td>
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>0元</td>
+                                            <td>2元</td>
                                         </tr>
                                     </table>
                                 </div>
                                 <div class="selectEg">选号示例</div>
                                 <div class="EgContent">
                                     <ul>
-                                        <li>投注：1****</li>
-                                        <li>开奖：1****</li>
+                                        <li>投注：01,02,03</li>
+                                        <li>开奖：01,02,03,*,*</li>
                                         <li>奖金：
-                                            <ins>19.60</ins>
+                                            <ins>1928.52</ins>
                                         </li>
                                         <!---->
                                     </ul>
@@ -173,234 +157,151 @@
                                 <div class="sscCheckNumber">
                                     <ul>
                                         <li>
-                                            <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">万位
+                                            <div class="fix selectSYX5">
+                                                <span class="buyNumberTitle">第一位
                                                     <i></i>
                                                 </span>
                                                 <div class="buyNumber fix">
                                                     <a class="">
-                                                        0
+                                                        01
                                                     </a>
                                                     <a class="">
-                                                        1
+                                                        02
                                                     </a>
                                                     <a class="">
-                                                        2
+                                                        03
                                                     </a>
                                                     <a class="">
-                                                        3
+                                                        04
                                                     </a>
                                                     <a class="">
-                                                        4
+                                                        05
                                                     </a>
                                                     <a class="">
-                                                        5
+                                                        06
                                                     </a>
                                                     <a class="">
-                                                        6
+                                                        07
                                                     </a>
                                                     <a class="">
-                                                        7
+                                                        08
                                                     </a>
                                                     <a class="">
-                                                        8
+                                                        09
                                                     </a>
                                                     <a class="">
-                                                        9
+                                                        10
+                                                    </a>
+                                                    <a class="">
+                                                        11
                                                     </a>
                                                 </div>
                                                 <!---->
                                                 <div class="buyNumberFilter">
-                                                    <a v-on:click="selected">全</a>
-                                                    <a v-on:click="selected">大</a>
-                                                    <a v-on:click="selected">小</a>
-                                                    <a v-on:click="selected">奇</a>
-                                                    <a v-on:click="selected">偶</a>
-                                                    <a v-on:click="selected">清</a>
+                                                    <a>全</a>
+                                                    <a>大</a>
+                                                    <a>小</a>
+                                                    <a>奇</a>
+                                                    <a>偶</a>
+                                                    <a>清</a>
                                                 </div>
                                             </div>
-                                            <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">千位
+                                            <div class="fix selectSYX5">
+                                                <span class="buyNumberTitle">第二位
                                                     <i></i>
                                                 </span>
                                                 <div class="buyNumber fix">
                                                     <a class="">
-                                                        0
+                                                        01
                                                     </a>
                                                     <a class="">
-                                                        1
+                                                        02
                                                     </a>
                                                     <a class="">
-                                                        2
+                                                        03
                                                     </a>
                                                     <a class="">
-                                                        3
+                                                        04
                                                     </a>
                                                     <a class="">
-                                                        4
+                                                        05
                                                     </a>
                                                     <a class="">
-                                                        5
+                                                        06
                                                     </a>
                                                     <a class="">
-                                                        6
+                                                        07
                                                     </a>
                                                     <a class="">
-                                                        7
+                                                        08
                                                     </a>
                                                     <a class="">
-                                                        8
+                                                        09
                                                     </a>
                                                     <a class="">
-                                                        9
+                                                        10
+                                                    </a>
+                                                    <a class="">
+                                                        11
                                                     </a>
                                                 </div>
                                                 <!---->
                                                 <div class="buyNumberFilter">
-                                                    <a v-on:click="selected">全</a>
-                                                    <a v-on:click="selected">大</a>
-                                                    <a v-on:click="selected">小</a>
-                                                    <a v-on:click="selected">奇</a>
-                                                    <a v-on:click="selected">偶</a>
-                                                    <a v-on:click="selected">清</a>
+                                                    <a>全</a>
+                                                    <a>大</a>
+                                                    <a>小</a>
+                                                    <a>奇</a>
+                                                    <a>偶</a>
+                                                    <a>清</a>
                                                 </div>
                                             </div>
-                                            <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">百位
+                                            <div class="fix selectSYX5">
+                                                <span class="buyNumberTitle">第三位
                                                     <i></i>
                                                 </span>
                                                 <div class="buyNumber fix">
                                                     <a class="">
-                                                        0
+                                                        01
                                                     </a>
                                                     <a class="">
-                                                        1
+                                                        02
                                                     </a>
                                                     <a class="">
-                                                        2
+                                                        03
                                                     </a>
                                                     <a class="">
-                                                        3
+                                                        04
                                                     </a>
                                                     <a class="">
-                                                        4
+                                                        05
                                                     </a>
                                                     <a class="">
-                                                        5
+                                                        06
                                                     </a>
                                                     <a class="">
-                                                        6
+                                                        07
                                                     </a>
                                                     <a class="">
-                                                        7
+                                                        08
                                                     </a>
                                                     <a class="">
-                                                        8
+                                                        09
                                                     </a>
                                                     <a class="">
-                                                        9
+                                                        10
+                                                    </a>
+                                                    <a class="">
+                                                        11
                                                     </a>
                                                 </div>
                                                 <!---->
                                                 <div class="buyNumberFilter">
-                                                    <a v-on:click="selected">全</a>
-                                                    <a v-on:click="selected">大</a>
-                                                    <a v-on:click="selected">小</a>
-                                                    <a v-on:click="selected">奇</a>
-                                                    <a v-on:click="selected">偶</a>
-                                                    <a v-on:click="selected">清</a>
-                                                </div>
-                                            </div>
-                                            <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">十位
-                                                    <i></i>
-                                                </span>
-                                                <div class="buyNumber fix">
-                                                    <a class="">
-                                                        0
-                                                    </a>
-                                                    <a class="">
-                                                        1
-                                                    </a>
-                                                    <a class="">
-                                                        2
-                                                    </a>
-                                                    <a class="">
-                                                        3
-                                                    </a>
-                                                    <a class="">
-                                                        4
-                                                    </a>
-                                                    <a class="">
-                                                        5
-                                                    </a>
-                                                    <a class="">
-                                                        6
-                                                    </a>
-                                                    <a class="">
-                                                        7
-                                                    </a>
-                                                    <a class="">
-                                                        8
-                                                    </a>
-                                                    <a class="">
-                                                        9
-                                                    </a>
-                                                </div>
-                                                <!---->
-                                                <div class="buyNumberFilter">
-                                                    <a v-on:click="selected">全</a>
-                                                    <a v-on:click="selected">大</a>
-                                                    <a v-on:click="selected">小</a>
-                                                    <a v-on:click="selected">奇</a>
-                                                    <a v-on:click="selected">偶</a>
-                                                    <a v-on:click="selected">清</a>
-                                                </div>
-                                            </div>
-                                            <div class="fix selectNormal">
-                                                <span class="buyNumberTitle">个位
-                                                    <i></i>
-                                                </span>
-                                                <div class="buyNumber fix">
-                                                    <a class="">
-                                                        0
-                                                    </a>
-                                                    <a class="">
-                                                        1
-                                                    </a>
-                                                    <a class="">
-                                                        2
-                                                    </a>
-                                                    <a class="">
-                                                        3
-                                                    </a>
-                                                    <a class="">
-                                                        4
-                                                    </a>
-                                                    <a class="">
-                                                        5
-                                                    </a>
-                                                    <a class="">
-                                                        6
-                                                    </a>
-                                                    <a class="">
-                                                        7
-                                                    </a>
-                                                    <a class="">
-                                                        8
-                                                    </a>
-                                                    <a class="">
-                                                        9
-                                                    </a>
-                                                </div>
-                                                <!---->
-                                                <div class="buyNumberFilter">
-                                                    <a v-on:click="selected">全</a>
-                                                    <a v-on:click="selected">大</a>
-                                                    <a v-on:click="selected">小</a>
-                                                    <a v-on:click="selected">奇</a>
-                                                    <a v-on:click="selected">偶</a>
-                                                    <a v-on:click="selected">清</a>
+                                                    <a>全</a>
+                                                    <a>大</a>
+                                                    <a>小</a>
+                                                    <a>奇</a>
+                                                    <a>偶</a>
+                                                    <a>清</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -412,10 +313,10 @@
                             <div class="Panel">
                                 <p class="betTotal">
                                     您选择了
-                                    <em>{{Quantity}}</em> 注，
+                                    <em>0</em> 注，
                                     <em class="inputAdd fix">
-                                        <i class="off" @click="addAndsub(false)">-</i> <input type="tel" v-on:input="muchChange" v-model="Much">
-                                        <i @click="addAndsub(true)">+</i>
+                                        <i class="off">-</i> <input type="tel">
+                                        <i class="">+</i>
                                     </em> 倍
                                     <select>
                                         <option value="1">元</option>
@@ -423,7 +324,7 @@
                                         <option value="0.01">分</option>
                                     </select>
                                     共
-                                    <i>{{Amount}}</i>元
+                                    <i>0.00</i>元
                                 </p>
                                 <a class="betBtn">确认选号</a>
                             </div>
@@ -449,9 +350,9 @@
                                 <div class="chase">
                                     <ul class="chaseSort fix">
                                         <li class="curr" style="cursor: pointer;">普通追号</li>
-                                        <li style="cursor: pointer;">翻倍追号</li>
-                                        <li style="cursor: pointer;">盈利率追号</li>
-                                        <li style="cursor: pointer;">盈利金额追号</li>
+                                        <li class="" style="cursor: pointer;">翻倍追号</li>
+                                        <li class="" style="cursor: pointer;">盈利率追号</li>
+                                        <li class="" style="cursor: pointer;">盈利金额追号</li>
                                         <label><input type="checkbox"> 中奖后停止追号
                                         </label>
                                     </ul>
@@ -459,284 +360,280 @@
                                         <div class="ordinaryChase">
                                             <span>连续追：</span>
                                             <ul class="chaseLonger fix" style="cursor: pointer;">
-                                                <li>5期</li>
+                                                <li class="">5期</li>
                                                 <li class="curr">10期</li>
-                                                <li>15期</li>
-                                                <li>20期</li>
+                                                <li class="">15期</li>
+                                                <li class="">20期</li>
                                             </ul>
                                             &nbsp;
                                             <input type="number">期 倍数：
                                             <input type="number"></div>
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>基本参数： </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>起始期号：
-                                                        <em class="selectIcon">
-                                                            <select class="userSelect">
-
-                                                            </select>
-                                                            <em></em>
-                                                        </em>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>追号期数：
-                                                        <input type="number"> 期
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>起始倍数：
-                                                        <input type="number"> 倍</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>高级参数：</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="radio" name="multiplyIndex" checked="checked"> 每隔
-                                                        <input type="number"> 期 倍数×
-                                                        <input type="number"> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="noCurr"><input type="radio" name="multiplyIndex"> 前
-                                                        <inputtype="number"> 期 倍数=起始倍数，之后倍数=
-                                                            <inputtype="number">
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table> <hr></div>
-                                    <div class="advancedChase fix" style="display: none;">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>基本参数： </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>起始期号：
-                                                        <em class="selectIcon">
-                                                            <select class="userSelect">
-
-                                                            </select>
-                                                            <em></em>
-                                                        </em>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>追号期数：
-                                                        <inputtype="number"> 期
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>起始倍数：
-                                                        <inputtype="number"> 倍</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>高级参数：</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="radio" name="rateIndex" checked="checked"> 预期盈利率≥
-                                                        <input type="number"> %
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="noCurr"><input type="radio" name="rateIndex"> 前
-                                                        <input type="number"> 期 预期盈利率≥
-                                                        <input type="number">%
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="noCurr">
-                                                        之后预期盈利率≥
-                                                        <input type="number">%
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table> <hr></div>
-                                    <div class="advancedChase fix" style="display: none;">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>基本参数： </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>起始期号：
-                                                        <em class="selectIcon">
-                                                            <select class="userSelect">
-
-                                                            </select>
-                                                            <em></em>
-                                                        </em>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>追号期数：
-                                                        <input type="number"> 期
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>起始倍数：
-                                                        <input type="number"> 倍</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>高级参数：</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="radio" name="cashIndex" checked="checked"> 预期盈利金额≥
-                                                        <input type="number"> 元
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="noCurr"><input type="radio" name="cashIndex"> 前
-                                                        <input type="number"> 期 预期盈利金额≥
-                                                        <input type="number">元
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="noCurr">
-                                                        之后预期盈利金额≥
-                                                        <input type="number">元
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table> <hr></div>
-                                    <a class="betBtn generalScheme" style="display: none;">生成追号计划</a>
-                                </div>
-                                <div>
-                                    <div>
-                                        <table class="chaseList _col5">
-                                            <tbody>
-                                                <tr>
-                                                    <th>序号</th>
-                                                    <th><input type="checkbox" checked="checked">追号期次</th>
-                                                    <th>倍数</th>
-                                                    <th>金额</th>
-                                                    <th>预期开奖时间</th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="chaseListCon">
-                                            <table class="chaseList generalTable _col5">
+                                        <div class="advancedChase fix" style="display: none;">
+                                            <table>
                                                 <tbody>
                                                     <tr>
-                                                        <td>1</td>
-                                                        <td><input type="checkbox">684599
-                                                            <em>(当前期)</em>
-                                                        </td>
-                                                        <td><input type="tel"> 倍</td>
-                                                        <td>￥0.00元</td>
-                                                        <td>20180529 20:26:10</td>
+                                                        <td>基本参数： </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>2</td>
-                                                        <td><input type="checkbox">684600
-                                                            <em style="display: none;">(当前期)</em>
+                                                        <td>起始期号：
+                                                            <em class="selectIcon">
+                                                            
+                                                                <em></em>
+                                                            </em>
                                                         </td>
-                                                        <td><input type="tel"> 倍</td>
-                                                        <td>￥0.00元</td>
-                                                        <td>20180529 20:31:10</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>3</td>
-                                                        <td><input type="checkbox">684601
-                                                            <em style="display: none;">(当前期)</em>
+                                                        <td>追号期数：
+                                                            <input type="number"> 期
                                                         </td>
-                                                        <td><input type="tel"> 倍</td>
-                                                        <td>￥0.00元</td>
-                                                        <td>20180529 20:36:10</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>4</td>
-                                                        <td><input type="checkbox">684602
-                                                            <em style="display: none;">(当前期)</em>
-                                                        </td>
-                                                        <td><input type="tel"> 倍</td>
-                                                        <td>￥0.00元</td>
-                                                        <td>20180529 20:41:10</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td><input type="checkbox">684603
-                                                            <em style="display: none;">(当前期)</em>
-                                                        </td>
-                                                        <td><input type="tel"> 倍</td>
-                                                        <td>￥0.00元</td>
-                                                        <td>20180529 20:46:10</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>6</td>
-                                                        <td><input type="checkbox">684604
-                                                            <em style="display: none;">(当前期)</em>
-                                                        </td>
-                                                        <td><input type="tel"> 倍</td>
-                                                        <td>￥0.00元</td>
-                                                        <td>20180529 20:51:10</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>7</td>
-                                                        <td><input type="checkbox">684605
-                                                            <em style="display: none;">(当前期)</em>
-                                                        </td>
-                                                        <td><input type="tel"> 倍</td>
-                                                        <td>￥0.00元</td>
-                                                        <td>20180529 20:56:10</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>8</td>
-                                                        <td><input type="checkbox">684606
-                                                            <em style="display: none;">(当前期)</em>
-                                                        </td>
-                                                        <td><input type="tel"> 倍</td>
-                                                        <td>￥0.00元</td>
-                                                        <td>20180529 21:01:10</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>9</td>
-                                                        <td><input type="checkbox">684607
-                                                            <em style="display: none;">(当前期)</em>
-                                                        </td>
-                                                        <td><input type="tel"> 倍</td>
-                                                        <td>￥0.00元</td>
-                                                        <td>20180529 21:06:10</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>10</td>
-                                                        <td><input type="checkbox">684608
-                                                            <em style="display: none;">(当前期)</em>
-                                                        </td>
-                                                        <td><input type="tel"> 倍</td>
-                                                        <td>￥0.00元</td>
-                                                        <td>20180529 21:11:10</td>
+                                                        <td>起始倍数：
+                                                            <input type="number"> 倍</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                        </div>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>高级参数：</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class=""><input type="radio" name="multiplyIndex" checked="checked"> 每隔
+                                                            <input type="number"> 期 倍数×
+                                                            <input type="number"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="noCurr"><input type="radio" name="multiplyIndex"> 前
+                                                            <input type="number"> 期 倍数=起始倍数，之后倍数=
+                                                            <input type="number"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table> <hr></div>
+                                        <div class="advancedChase fix" style="display: none;">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>基本参数： </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>起始期号：
+                                                            <em class="selectIcon">
+                                                               
+                                                                <em></em>
+                                                            </em>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>追号期数：
+                                                            <input type="number"> 期
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>起始倍数：
+                                                            <input type="number"> 倍</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>高级参数：</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class=""><input type="radio" name="rateIndex" checked="checked"> 预期盈利率≥
+                                                            <input type="number"> %
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="noCurr"><input type="radio" name="rateIndex"> 前
+                                                            <input type="number"> 期 预期盈利率≥
+                                                            <input type="number">%
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="noCurr">
+                                                            之后预期盈利率≥
+                                                            <input type="number">%
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table> <hr></div>
+                                        <div class="advancedChase fix" style="display: none;">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>基本参数： </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>起始期号：
+                                                            <em class="selectIcon">
+                                                                
+                                                                <em></em>
+                                                            </em>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>追号期数：
+                                                            <input type="number"> 期
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>起始倍数：
+                                                            <input type="number"> 倍</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>高级参数：</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class=""><input type="radio" name="cashIndex" checked="checked"> 预期盈利金额≥
+                                                            <input type="number"> 元
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="noCurr"><input type="radio" name="cashIndex"> 前
+                                                            <input type="number"> 期 预期盈利金额≥
+                                                            <input type="number">元
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="noCurr">
+                                                            之后预期盈利金额≥
+                                                            <input type="number">元
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table> <hr></div>
+                                        <a class="betBtn generalScheme" style="display: none;">生成追号计划</a>
                                     </div>
-                                    <!---->
+                                    <div >
+                                        <div >
+                                            <table  class="chaseList _col5">
+                                                <tbody >
+                                                    <tr >
+                                                        <th >序号</th>
+                                                        <th ><input  type="checkbox" checked="checked">追号期次</th>
+                                                        <th >倍数</th>
+                                                        <th >金额</th>
+                                                        <th >预期开奖时间</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div  class="chaseListCon">
+                                                <table  class="chaseList generalTable _col5">
+                                                    <tbody >
+                                                        <tr >
+                                                            <td >1</td>
+                                                            <td ><input  type="checkbox">2018060944
+                                                                <em >(当前期)</em>
+                                                            </td>
+                                                            <td ><input  type="tel"> 倍</td>
+                                                            <td >￥0.00元</td>
+                                                            <td >20180609 16:18:00</td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td >2</td>
+                                                            <td ><input  type="checkbox">2018060945
+                                                                <em  style="display: none;">(当前期)</em>
+                                                            </td>
+                                                            <td ><input  type="tel"> 倍</td>
+                                                            <td >￥0.00元</td>
+                                                            <td >20180609 16:28:00</td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td >3</td>
+                                                            <td ><input  type="checkbox">2018060946
+                                                                <em  style="display: none;">(当前期)</em>
+                                                            </td>
+                                                            <td ><input  type="tel"> 倍</td>
+                                                            <td >￥0.00元</td>
+                                                            <td >20180609 16:38:00</td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td >4</td>
+                                                            <td ><input  type="checkbox">2018060947
+                                                                <em  style="display: none;">(当前期)</em>
+                                                            </td>
+                                                            <td ><input  type="tel"> 倍</td>
+                                                            <td >￥0.00元</td>
+                                                            <td >20180609 16:48:00</td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td >5</td>
+                                                            <td ><input  type="checkbox">2018060948
+                                                                <em  style="display: none;">(当前期)</em>
+                                                            </td>
+                                                            <td ><input  type="tel"> 倍</td>
+                                                            <td >￥0.00元</td>
+                                                            <td >20180609 16:58:00</td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td >6</td>
+                                                            <td ><input  type="checkbox">2018060949
+                                                                <em  style="display: none;">(当前期)</em>
+                                                            </td>
+                                                            <td ><input  type="tel"> 倍</td>
+                                                            <td >￥0.00元</td>
+                                                            <td >20180609 17:08:00</td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td >7</td>
+                                                            <td ><input  type="checkbox">2018060950
+                                                                <em  style="display: none;">(当前期)</em>
+                                                            </td>
+                                                            <td ><input  type="tel"> 倍</td>
+                                                            <td >￥0.00元</td>
+                                                            <td >20180609 17:18:00</td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td >8</td>
+                                                            <td ><input  type="checkbox">2018060951
+                                                                <em  style="display: none;">(当前期)</em>
+                                                            </td>
+                                                            <td ><input  type="tel"> 倍</td>
+                                                            <td >￥0.00元</td>
+                                                            <td >20180609 17:28:00</td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td >9</td>
+                                                            <td ><input  type="checkbox">2018060952
+                                                                <em  style="display: none;">(当前期)</em>
+                                                            </td>
+                                                            <td ><input  type="tel"> 倍</td>
+                                                            <td >￥0.00元</td>
+                                                            <td >20180609 17:38:00</td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td >10</td>
+                                                            <td ><input  type="checkbox">2018060953
+                                                                <em  style="display: none;">(当前期)</em>
+                                                            </td>
+                                                            <td ><input  type="tel"> 倍</td>
+                                                            <td >￥0.00元</td>
+                                                            <td >20180609 17:48:00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!---->
+                                    </div>
                                 </div>
+                                <div class="chaseDes">
+                                    <p class="betTotal">共追号
+                                        <em>10</em> 期，
+                                        <i>0</i> 注，总投注金额
+                                        <em>0.00</em>元</p>
+                                </div>
+                                <a class="betBtn">立即投注</a>
                             </div>
-                            <div class="chaseDes">
-                                <p class="betTotal">共追号
-                                    <em>10</em> 期，
-                                    <i>0</i> 注，总投注金额
-                                    <em>0.00</em>元</p>
-                            </div>
-                            <a class="betBtn">立即投注</a>
                         </div>
                     </div>
+
                 </div>
                 <div class="betRight">
                     <div class="today box">
@@ -763,7 +660,7 @@
                                         </td>
                                         <td>
 
-                                            <i class="numbers">{{item.LotteryOpen }}
+                                            <i class="numbers">{{item.LotteryOpen | formatNO}}
                                                 <a v-on:click="detail(item.LotteryOpen)">详情</a>
                                             </i>
                                         </td>
@@ -999,9 +896,8 @@
 <script>
 import vFoot from "../common/Footer.vue";
 import vHead from "../common/SubHeader.vue";
-import ctl from "../../Controller.js";
 import moment from "moment";
-
+import ctl from "../../Controller.js";
 export default {
   data() {
     return {
@@ -1029,11 +925,10 @@ export default {
       currentID: "",
       currentList: [],
       nowPlan: {},
-      code: 1000,
-      LotteryName: "",
       countTimeStr: "00:00:00",
       Timer1: null,
-      Timer2: null
+      Timer2: null,
+      LotteryName: ""
     };
   },
   components: {
@@ -1045,14 +940,17 @@ export default {
     that.code = this.$route.params.id;
 
     switch (that.code) {
-      case "1000":
-        this.LotteryName = "重庆时时彩";
+      case "1100":
+        this.LotteryName = "广东11选5";
         break;
-      case "1001":
-        this.LotteryName = "新疆时时彩";
+      case "1101":
+        this.LotteryName = "上海11选5";
         break;
-      case "1003":
-        this.LotteryName = "天津时时彩";
+      case "1102":
+        this.LotteryName = "山东11选5";
+        break;
+      case "1103":
+        this.LotteryName = "江西11选5";
         break;
     }
 
@@ -1093,8 +991,7 @@ export default {
       clearInterval(this.Timer1);
       clearInterval(this.Timer2);
       //this.$router.push("/lottery/SSC" + code);
-      window.location.href = '/lottery/SSC/'+code;
-    
+      window.location.href = "/lottery/SYX5/" + code;
     },
     detail(id) {
       this.layer.open({
@@ -1107,109 +1004,7 @@ export default {
         btn: ["确定"]
       });
     },
-    choose(event) {
-      var text = event.currentTarget.innerText;
-      var eID = event.target.parentNode.getAttribute("id");
-      var child = event.target.parentNode.children;
-      if (event.currentTarget.className == "") {
-        event.currentTarget.className = "curr";
-      } else {
-        event.currentTarget.className = "";
-      }
-      this.setValue(eID, child);
-    },
-    selected(event) {
-      var that = this;
-      var text = event.currentTarget.innerText;
-      var child = event.target.parentNode.previousElementSibling.children;
-      var eID = event.target.parentNode.previousElementSibling.getAttribute(
-        "id"
-      );
 
-      for (var i = 0; i < child.length; i++) {
-        child[i].className = "";
-      }
-
-      if (text == "全") {
-        for (var i = 0; i < child.length; i++) {
-          child[i].className = "curr";
-        }
-      }
-      if (text == "奇") {
-        for (var i = 0; i < child.length; i++) {
-          if ((i + 1) % 2 == 1) {
-            child[i].className = "curr";
-          }
-        }
-      }
-
-      if (text == "偶") {
-        for (var i = 0; i < child.length; i++) {
-          if ((i + 1) % 2 == 0) {
-            child[i].className = "curr";
-          }
-        }
-      }
-      if (text == "大") {
-        for (var i = 0; i < child.length; i++) {
-          if (i >= 5) {
-            child[i].className = "curr";
-          }
-        }
-      }
-      if (text == "小") {
-        for (var i = 0; i < child.length; i++) {
-          if (i < 5) {
-            child[i].className = "curr";
-          }
-        }
-      }
-      that.setValue(eID, child);
-    },
-    setValue(id, child) {
-      var that = this;
-      that.chooseOBJ[id].splice(0, that.chooseOBJ[id].length);
-
-      for (var i = 0; i < child.length; i++) {
-        if (child[i].className == "curr") {
-          that.chooseOBJ[id].push(child[i].innerText);
-        }
-      }
-
-      var num = 0;
-
-      for (var i in that.chooseOBJ) {
-        num = num + that.chooseOBJ[i].length;
-      }
-
-      that.Quantity = num;
-      that.Amount = parseFloat(num * 2, 2);
-      //console.info(this.chooseOBJ[id].length);
-    },
-    addAndsub(flag) {
-      let that = this;
-      if (flag) {
-        if (that.Much > 10000) {
-          return false;
-        }
-        that.Much = that.Much + 1;
-        that.Amount = that.Much * that.UnitPrice * this.Quantity;
-      } else {
-        if (that.Much <= 1) {
-          that.Much = 1;
-        } else {
-          that.Much = that.Much - 1;
-        }
-
-        that.Amount = that.Much * that.UnitPrice * this.Quantity;
-      }
-    },
-    muchChange() {
-      var that = this;
-      if (that.Much >= 1 && that.Much <= 10000) {
-        that.Amount = that.Much * that.UnitPrice * this.Quantity;
-      }
-    },
     isDateBetween(beginTime, endTime, nowTime) {
       var strb = beginTime.split(":");
       if (strb.length != 3) {
@@ -1277,8 +1072,8 @@ export default {
     },
     StartTime() {
       let that = this;
-      that.nowPlan = this.findNowPlan();
 
+      that.nowPlan = this.findNowPlan();
       that.Timer1 = setInterval(function() {
         var m = that.ServerTime;
         that.ServerTime = new Date(m.getTime() + 1000);
@@ -1323,7 +1118,7 @@ export default {
       let leftTime = end - now;
       let num = Math.abs(leftTime) / 1000 / 60;
 
-      if (num < 10) {
+      if (num < 5) {
         that.currentID = parseInt(that.OpenList[0].IssueNo);
       } else {
         that.currentID = parseInt(that.OpenList[0].IssueNo) + 1;
@@ -1351,21 +1146,4 @@ export default {
 </script>
 
 <style>
-.betFilter li {
-  width: 38px;
-  height: 28px;
-}
-ul li {
-  /* display: inline-block;
-  width: 42px;
-  height: 48px;
-  margin: 0 5px;
-  position: relative;
-  background: url(http://imagess-google.com/system/pc/ssc/ballOpenBg.png)
-    no-repeat;
-  font-size: 22px;
-  line-height: 42px;
-  color: #a12836;
-  text-shadow: 1px 1px 1px #f5f5f5; */
-}
 </style>

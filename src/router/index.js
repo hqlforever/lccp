@@ -23,6 +23,23 @@ export default new Router({
       path: '/lottery/PK10',
       component: resolve => require(['../components/page/PK10.vue'], resolve)
     },
+    {
+      path: '/lottery/FC3D',
+      component: resolve => require(['../components/page/FC3D.vue'], resolve)
+    },
+    {
+      path: '/lottery/PL3',
+      component: resolve => require(['../components/page/PL3.vue'], resolve)
+    },
+    {
+      path: '/lottery/6HC',
+      component: resolve => require(['../components/page/6HC.vue'], resolve)
+    }
+    ,
+    {
+      path: '/lottery/SYX5/:id',
+      component: resolve => require(['../components/page/SYX5.vue'], resolve)
+    }
     ,
     {
       path: '/lottery/SSC/:id',
